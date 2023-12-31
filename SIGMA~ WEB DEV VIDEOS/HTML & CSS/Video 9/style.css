@@ -1,0 +1,11 @@
+/* this is class call in css ~ . */
+.hello{
+    background-color: aquamarine;
+}
+/* this is the id call in css ~ # */
+#firstid{ 
+    color: rgb(236, 95, 95);
+}
+#secondid{
+    color: rgb(76, 76, 213);
+}

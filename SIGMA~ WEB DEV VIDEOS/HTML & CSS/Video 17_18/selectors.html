@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selector</title>
+    <style>
+        div {
+            /* Element Selector */
+            background-color: aquamarine;
+        }
+
+        div>p {
+            /* Child  Selector */
+            background-color: rgb(245, 112, 112);
+        }
+
+        div p {
+            /* Descendant Selector */
+            color: rgb(91, 91, 241);
+        }
+
+        * {
+            /* Universal  Selector */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Class ~ (.) , ID ~ (#) */
+        /* Pseudo Selector */
+        a:visited {
+            color: palevioletred
+        }
+
+        a:link {
+            color: greenyellow;
+        }
+
+        a:active {
+            background-color: rgb(230, 110, 230);
+        }
+
+        a:hover {
+            color: rgb(74, 222, 160);
+        }
+
+        p:first-child {
+            background-color: yellow;
+        }
+
+        /* Box Model */
+        .box {
+            background-color: chartreuse
+        }
+
+        .box1 {
+            color: crimson;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid black;
+            height: 50px;
+            box-sizing: border-box;
+            text-decoration: underline;
+            text-decoration-color: yellow;
+
+        }
+
+        .box2 {
+            color: darkblue;
+            text-decoration: underline;
+            text-decoration-color: yellow;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid black;
+            height: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            hello guys I am another div.
+        </div>
+        <p>I am a para in a div(a child basically)</p>
+        I am a div.
+    </div>
+    <div>
+        <h4>Hello, me the h4~ in div.
+            <p>The paragraph in the h4 in the div(light red nhi hua!) heheheh</p>
+        </h4>
+    </div>
+    <a target="_blank" href="https://www.lenovo.com">Lenovo</a>
+    <a href="https://www.yahoo.com">Yahoo</a>
+
+    <h3>This is h3 in the p~ basically a first child
+        <p>Lorem(first child in the h4) </p>
+    </h3>
+    <div class="box box1">This is the box1</div>
+    <div class="box box2">This is the box2</div>
+</body>
+
+</html>

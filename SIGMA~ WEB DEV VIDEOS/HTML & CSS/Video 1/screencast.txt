@@ -1,0 +1,5 @@
+This is the page for getting the knowledge of screenshot to get every subtitle of whatever I type, for that:
+Click on the command palette & then select "Toggle Screencast".
+Then go to the setting & type screencast~
+Last one "vertical offset"~ set to 0 
+Then the fond size~ default 56 set to 20(which is minimum).

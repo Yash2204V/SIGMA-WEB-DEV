@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts & Cascading Algo.</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet"> -->
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@500&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:ital,wght@1,200&display=swap');
+
+        /*     h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+    } */
+        h1:first-child {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Baloo 2', sans-serif;
+            /*     font-style: italic;
+    font-weight: bold;
+    text-decoration: underline; */
+            font-size: 20px;
+            line-height: 4;
+            line-height: 1.2;
+            letter-spacing: 1px;
+        }
+        div h1:not(:first-child){
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: lowercase;
+            text-decoration: underline;
+            text-decoration-color: red; /* Only applied when given a text decoration~ underline or something specific! */
+            text-decoration-style: solid;
+            text-decoration-thickness: 6px;
+            text-indent: 45px;
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 45px;
+            text-overflow: clip;
+            overflow: hidden;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>FONTS</h1>
+        <h1>About Fonts</h1>
+        <p>hey I am good</p>
+        <p class=".lorem" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officiis consequatur deleniti
+            reprehenderit, quibusdam dolores officia saepe vel non deserunt odio consectetur reiciendis!</p>
+    </div>
+    
+</body>
+
+</html>

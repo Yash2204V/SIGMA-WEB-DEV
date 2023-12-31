@@ -1,0 +1,5 @@
+https://web.dev/articles/cls
+Video 5/Screenshot 2023-11-08 233008.png
+CLS
+LCP
+FID

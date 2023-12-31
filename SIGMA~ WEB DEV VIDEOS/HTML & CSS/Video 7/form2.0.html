@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ~ Dada ke zameen</title>
+    <style>
+        .dark-theme {
+            --background-color: #090808;
+            --text-color: #ffffff;
+            transition: all 1s;
+        }
+        body {
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <u>
+        <h2>Form to get my dada's zameen(tau nhi denge)</h2>
+    </u>
+    <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username">
+    </div>
+
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <label for="identity">Aap hamare hai kon?</label>
+    <input type="text" id="identity" placeholder="ha bhyi kon?">
+    </div>
+
+    <div>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <div>
+        </div>
+        <div>
+            <label for="comment">Enter your qualification</label>
+            <br><textarea name="comment" id="comment" cols="20" rows="5" placeholder="Aukat kya hai?"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="watermelon">Watermelon</option>
+            </select>
+        </div>
+
+        <button>
+            <div class="toggle-btn" id="btn">
+                <span>Dark</span>
+            </div>
+        </button>
+
+        <script>
+            let btn = document.getElementById("btn");
+
+            btn.onclick = function () {
+                document.body.classList.toggle("dark-theme");
+            }
+        </script>
+</body>
+
+</html>

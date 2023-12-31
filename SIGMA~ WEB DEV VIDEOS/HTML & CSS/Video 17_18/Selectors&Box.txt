@@ -1,0 +1,25 @@
+This is the text based summary of the things you have to use while implementing the function in the tags:
+
+^Selectors:
+div           : Block element
+div > p       : This is the first child in the div which is mentioned in the style tag
+div p         : This include all the paragraph mentioned in the div
+*             : This is universal tag used to include the property to all the function
+#             : This is the id Selector used to mention the change in only one unit
+.             : This is used to define the property to more than one unit
+p:first-child : This is used to define only when the p is the first child.
+
+
+^Box define:
+@ The basic thing here is to first mention (MARGIN AND PADDING), then mention the (BORDER) with some solid colour.
+
+@ Then mention the height of the box, 
+[
+(Box sizing: border-box)~ included then it will add upto the margin means...
+{
+    M | B | P | C (+ all) ~ included [box sizing: border-box] while also mentioning the [height].
+    C (only content) ~ if not included.
+}
+]
+
+@ For text decoration we use underline and then to decorate the text decorator we use the --color property(txt specific)

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar | Real World Based</title>
+    <style>
+        @media screen and (orientation: portrait) {
+            body {
+                /*Portrait~ height > width  & visa versa with Landscape*/
+                border: 2px solid purple;
+            }
+
+            div:first-child {
+                display: flex;
+                gap: 0vw;
+            }
+            
+            .logoLeft>img {
+                width: 19vw;
+                height: 8vh;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logoLeft>img {
+            width: 195px;
+            height: 66px;
+        }
+
+        .logoRight>img {
+            width: 57px;
+            height: 43px;
+            padding: 12px;
+        }
+
+        div:first-child {
+            display: flex;
+            gap: 21vw;
+        }
+
+        div:not(:first-child) {
+            display: flex;
+            gap: 25px;
+
+        }
+
+        .nav {
+            justify-content: space-between;
+            gap: 60vw;
+        }
+
+        ol {
+            display: inline-flex;
+            gap: 20px 54px;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logoLeft">
+                <img src="Dark-logo.png" alt="" srcset="">
+
+            </div>
+            <div class="rightSide">
+                <ol>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About us</li>
+                </ol>
+                <div class="logoRight">
+                    <img src="Screenshot 2023-11-28 220941.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

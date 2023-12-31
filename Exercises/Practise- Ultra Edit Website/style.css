@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
+
+
+li:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.logoLeft img {
+    width: 15vw;
+    height: 70px;
+}
+
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.section1>div:first-child {
+    font-size: xxx-large;
+    font-family: sans-serif;
+    margin: 31px;
+
+}
+
+.intro p {
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
+    width: 88vw;
+    font-family: sans-serif;
+}
+
+.section1 button {
+    border-radius: 6px;
+    padding: 16px;
+    font-weight: 600;
+    background: #09a6bd;
+    color: white;
+    border: white;
+}
+
+.section1 button:hover {
+    background: #2eb4c9;
+}
+
+.topHead {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 19px 130px;
+
+}
+
+.topHead img {
+    width: 5vw;
+}
+
+.grid {
+    display: grid;
+    width: 80vw;
+    height: 75vh;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 41px;
+}
+
+.box {
+    background-color: rgb(244, 244, 244);
+    width: -webkit-fill-available;
+    height: 149px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section2 .button {
+    display: flex;
+    gap: 4px;
+
+}
+
+.section2 .button button {
+    padding: 10px 12px;
+    margin: 7px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 6px;
+}
+
+.section2 .button button:first-child {
+    background-color: #09a6bd;
+    border: white;
+}
+
+.section2 .button button:not(:first-child) {
+    background-color: #5cb85c;
+    border: white;
+}
+
+
+main{
+    padding: 20px;
+    text-align: center;
+}

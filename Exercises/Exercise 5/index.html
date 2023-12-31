@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Layout!</title>
+    <style>
+        :root {
+            --primarycolor: black;
+            --secondarycolor: white;
+            --defpad: 10px;
+            --border: 1px solid var(--secondarycolor);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            background-color: var(--primarycolor);
+
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+            padding: var(--defpad);
+            background-color: var(--secondarycolor);
+        }
+
+        ul {
+            margin: 4px;
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 3px 7px;
+            list-style: none;
+        }
+
+
+        .secondarycont {
+            margin: 10px;
+            margin-left: 17px;
+            padding: var(--defpad);
+            width: 95vw;
+            height: 700px;
+            border: var(--border);
+        }
+
+        figure>div {
+            border: 1px solid white;
+            width: 450px;
+            height: 450px;
+            margin: var(--defpad);
+
+        }
+
+        figure {
+            display: flex;
+        }
+
+        .box-1 {
+            background-color: rgb(250, 107, 107);
+            margin-left: 170px;
+        }
+
+        .box-2 {
+            background-color: rgb(95, 145, 253);
+            margin-left: 170px;
+        }
+
+        .content {
+            color: var(--secondarycolor);
+            border: var(--border);
+            width: 312px;
+            height: 3px;
+            border-radius: 115px;
+            margin: 20px 480px;
+            padding: 71px;
+            position: static;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: xx-large;
+            margin-top: -55px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: plum;
+        }
+
+        .img {
+            position: fixed;
+            bottom: 46px;
+            right: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="primarycont">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service Us</li>
+            </ul>
+        </nav>
+        <main class="secondarycont">
+            <figure>
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+            </figure>
+            <div class="content">
+                <h3>
+                    Welcome to the Sigma Web Development Course
+                </h3>
+            </div>
+        </main>
+        <footer></footer>
+        <div class="img">
+            <img src="Create a logo w 1.png" alt="" width="100px">
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

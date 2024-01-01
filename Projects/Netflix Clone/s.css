@@ -9,18 +9,19 @@ body {
 
 header {
     background: url(https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-    width: 100%;
-    height: 95vh;
-    position: absolute;
-    top: 0;
+    background-position: center center;
+    max-width: max(1200px, 100vw);
+    height: 93vh;
+    position: relative;
 }
 
 .dubby {
     background-color: black;
-    opacity: 0.70;
-    height: 95vh;
+    opacity: 0.67;
+    height: 93vh;
     width: 100%;
-    
+    position: absolute;
+    top: 0;
 }
 
 nav {
@@ -28,7 +29,7 @@ nav {
     margin: auto;
     display: flex;
     position: relative;
-    z-index: 20;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
     padding: 28px;
@@ -46,7 +47,7 @@ nav>div:nth-child(2) {
     gap: 13px;
 }
 
-button {
+.btn {
     padding: 7px;
     border-radius: 8px;
     cursor: pointer;
@@ -62,14 +63,19 @@ button {
     align-items: center;
 }
 
+.btn-trans input {
+    padding: 7px 95px 8px 13px;
+
+}
+
 .btn-red {
     background-color: rgb(255, 0, 0);
     color: white;
     border: none;
 }
 
-.topLeft{
-    
+.topLeft {
+
     z-index: 18;
     color: red;
 }
@@ -79,37 +85,173 @@ button {
     margin: auto;
     color: white;
     display: flex;
-    
-    
+    position: relative;
+    z-index: 2;
     flex-direction: column;
     width: 80vw;
-    gap: 14px;
+    gap: 24px;
     margin-top: 120px;
 }
 
-.flex > div:nth-child(1) {
+.flex>div:nth-child(1) {
     font-size: 48px;
     font-weight: 900;
     font-family: sans-serif;
 }
 
-.flex > div:nth-child(2) {
+.flex>div:nth-child(2) {
     font-size: 24px;
     font-weight: 400;
     font-family: sans-serif;
 }
 
-.flex > div:nth-child(3) {
+.flex span {
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
     font-family: sans-serif;
 }
 
-.flex > div:nth-child(4) {
+.flex>div:nth-child(3) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.seperator {
+    height: 8px;
+    background-color: rgb(40, 39, 39);
+}
+
+.first {
+    display: flex;
+    gap: 20px;
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+}
+
+.text > div:nth-child(1), .faq > div:nth-child(1){
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.text > div:nth-child(2) ,.faqBox{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.first .srcImg {
+    position: relative;
+    z-index: 0;
+}
+
+.first .srcImg video {
+    position: absolute;
+    top: 95px;
+    right: 83px;
+    z-index: -1;
+}
+
+
+.box {
+    display: flex;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 370px;
+    justify-content: space-between;
+    align-items: center;
+    left: 169px;
+    width: 20vw;
+}
+
+.second .srcImg {
+    position: relative;
+}
+
+.box > img{
+    width: 58px;
+    padding: 5px;
+}
+
+.box div::first-line{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.box div:nth-child(2){
+    color: #0071eb;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+} 
+
+.third .srcImg video{
+    position: absolute;
+    top: 54px;
+    right: 119px;
+    z-index: -1;
+    width: 27vw;
+}
+.faq > div:nth-child(1){
+    text-align: center;
+    padding: 20px;
+}
+
+.faqBox{
+    margin: auto;
+    width: 73vw;
+    background-color: #474747;
+    color: white;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.faq{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.flexbottom{
+    margin-top: 0px;
+    padding: 50px;
+}
+
+footer{
+    display: flex;
+    color: gray;
+    flex-direction: column;
+    align-items: normal;
+    max-width: 70vw;
+    margin: auto;
+    padding: 80px;
+    gap: 27px;
+}
+
+a{
+    color: gray;
+}
+
+.tablesec{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tablesec div{
+    display: flex;
+    justify-content: space-between;
 }
